@@ -1,10 +1,10 @@
 # reto 8: ciclo for en Python
-## 1.Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.
+## 1. Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.
 ```python
 for i in range(1,101,1): # se define una lista desde 1 a 100 (definiendola hasta n+1) con tamaño de paso igual a 1
   print(i,i**2) #se imprime cada elemento de la lista con su respectivo cuadrado
 ```
-## 2.Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
+## 2. Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
 ```python
 range(1,1000,2) #se crea el rango de números
 for num in range(1,1000,2): #se crea el ciclo 'para cada número del rango':
@@ -14,14 +14,14 @@ range(2,10001,2)
 for i in range(2,1001,2):
   print(i)
 ```
-## 3.Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
+## 3. Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
 ```python
 n = int(input("Ingrese un numero entero mayor o igual a 2: ")) # valor ingresado por teclado
 for i in range(n, 0, -1): #recorre todos pero solo imprime los pares, por eso el tamaño del paso es 1
   if i % 2 ==0:
     print(i)
 ```
-## 4.Imprimir los números de 1 hasta un número natural n dado, cada uno con su respectivo factorial.
+## 4. Imprimir los números de 1 hasta un número natural n dado, cada uno con su respectivo factorial.
 ```python
 n = int(input("Ingrese un numero entero positivo: ")) #valor ingresado por teclado
 f = 1 #se define el factorial del primer número de la lista
@@ -31,7 +31,7 @@ for i in range(1,n+1,1): #hacer una lista con los números hasta n
     f = f * j
   print(i, f)
 ```
-## 5.Calcular el valor de 2 elevado a la potencia n usando ciclos for.
+## 5. Calcular el valor de 2 elevado a la potencia n usando ciclos for.
 ```python
 n = int(input("Ingrese un numero entero: ")) #valor ingresado por teclado
 resultado:int = 1 #primer numero de la iteracion
@@ -43,7 +43,7 @@ else:
   print ("2 elevado a la " +str(n)+ " es " +str(resultado))
 ```
 
-## 6.Leer un número natural n, leer otro dato de tipo real x y calcular x^n usando ciclos for. Disclaimer: Trate de no utilizar el operador de potencia (**).
+## 6. Leer un número natural n, leer otro dato de tipo real x y calcular x^n usando ciclos for. Disclaimer: Trate de no utilizar el operador de potencia (**).
 ```python
 x = float(input("Ingrese un número ")) #valores ingresados por teclado
 n = int(input("Ingrese un número entero positivo ")) 
@@ -56,14 +56,14 @@ else:
   print(str(x)+ " elevado a la " +str(n)+ " es " +str(resultado))
 ```
 
-## 7.Diseñe un programa que muestre las tablas de multiplicar del 1 al 9.
+## 7. Diseñe un programa que muestre las tablas de multiplicar del 1 al 9.
 ```python
 for i in range(1, 10): #se define una lista de 9 elementos (las 9 tablas)
   print("Tabla del", i) 
   for j in range(1, 11): #se definen los 10 elementos pertinentes para cada tabla, es decir, por cada i de la lista, se hace una sublista
     print(str(i) + " x " + str(j) + " = " + str(i*j))
 ```
-## 8.Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. Nota: use math para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
+## 8. Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. Nota: use math para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
 $$e^x \approx exp(x,n) \approx \sum_{i=0}^{n}\frac{x^i}{i!}$$
 ```python
 import math #importar librería
@@ -104,7 +104,7 @@ diferencia = abs((math.sin(x) - suma) /(math.sin(x))) * 100 #cálculo del error
 print("El valor de la función de seno en radianes, evaluado en " +str(x)+ " es aproximadamente de " +str(suma))
 print("El error respecto a la función de seno reportada en la literatura es del " +str(diferencia)+ " %")
 ```
-## 10.Diseñar una función que permita calcular una aproximación de la función arcotangente alrededor de 0 para cualquier valor x en el rango [-1, 1], utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función arctan y mostrar la diferencia entre el valor real y la aproximación.
+## 10. Diseñar una función que permita calcular una aproximación de la función arcotangente alrededor de 0 para cualquier valor x en el rango [-1, 1], utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función arctan y mostrar la diferencia entre el valor real y la aproximación.
 $$arctan(x) \approx arctan(x,n) \approx \sum_{i=0}^{n} (-1)^i \frac{x^{2i+1}}{(2i+1)}$$
 ```python
 import math #importar librería
