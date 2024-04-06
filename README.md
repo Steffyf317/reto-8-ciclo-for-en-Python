@@ -90,7 +90,7 @@ $$sin(x) \approx sin(x,n) \approx \sum_{i=0}^{n} (-1)^i \frac{x^{2i+1}}{(2i+1)!}
 import math #importar librería
 
 x = float(input("Ingrese un valor para x en la serie de Mcclaurin ")) #valor ingresado por teclado
-n: int = 30 #número de términos de la serie, estos se determinaron por ensayo y error de tal manera que el error sea menor al requerido
+n: int = 30 #número de términos de la serie
 suma : float = 0 #inicializar la variable de términos de la sumatoria
 f:int = 1 #factorial del primer denominador de cada término de la sumatoria
 for i in range(n+1): #lista de valores hasta n
