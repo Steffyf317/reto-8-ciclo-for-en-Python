@@ -69,7 +69,7 @@ $$e^x \approx exp(x,n) \approx \sum_{i=0}^{n}\frac{x^i}{i!}$$
 import math #importar librería
 
 x = float(input("Ingrese un valor para x en la serie de Mcclaurin ")) #valor ingresado por teclado
-n: int = 30 #número de términos de la serie, estos se determinaron por ensayo y error de tal manera que el error fuese menor al requerido
+n: int = 80 #número de términos de la serie, estos se determinaron por ensayo y error de tal manera que el error fuese menor al requerido
 suma : float = 0 # iniciar la sumatoria 
 f:int = 1 #factorial del primer número i de la serie
 
