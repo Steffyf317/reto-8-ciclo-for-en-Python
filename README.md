@@ -24,7 +24,7 @@ for i in range(n, 0, -1): #recorre todos pero solo imprime los pares, por eso el
 ## 4. Imprimir los números de 1 hasta un número natural n dado, cada uno con su respectivo factorial.
 ```python
 n = int(input("Ingrese un numero entero positivo: ")) #valor ingresado por teclado
-f = 1 #se define el factorial del primer número de la lista
+f:int = 1 #se define el factorial del primer número de la lista
 for i in range(1,n+1,1): #hacer una lista con los números hasta n
   f = i # se establece f en i para que la variable i no se altere en la siguiente iteraciòn
   for j in range(1, i): # el j es cada factor para cada i de la lista:
