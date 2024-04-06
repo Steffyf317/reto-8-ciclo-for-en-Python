@@ -110,7 +110,7 @@ $$arctan(x) \approx arctan(x,n) \approx \sum_{i=0}^{n} (-1)^i \frac{x^{2i+1}}{(2
 import math #importar librería
 
 x = float(input("Ingrese un valor para x en la serie de Mcclaurin entre -1 y 1 ")) #valor ingresado por teclado
-n: int = 10 #número de términos de la serie
+n: int = 350 #número de términos de la serie
 suma : float = 0 # #inicializar la variable de términos de la sumatoria
 for i in range(n+1): #lista de valores hasta n
   suma += (-1)**i * ((x**(2*i+1))/(2*i+1)) #definición de los términos de la serie para la arcotangente 
